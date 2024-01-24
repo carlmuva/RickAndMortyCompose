@@ -6,7 +6,7 @@ import com.bisontek.rickandmortycompose.domain.model.Characters
 import kotlinx.coroutines.flow.Flow
 
 
-interface CaracterRepository {
+interface CharacterRepository {
 
     //Cuando se usa flow no es necesario usar suspend
     fun getCharacters(page: Int): Flow<Result<List<Characters>>>
